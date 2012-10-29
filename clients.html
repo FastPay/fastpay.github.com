@@ -1,0 +1,307 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+        <meta name="norton-safeweb-site-verification" content="ez0rdar1-lagwfotqwhv9gppr4fgnrla7md0v89kwrp0d2sgnd3x8wn9frmh4pvhr74eh5v10y7kbanz3gmwedio56qcjp7bwtnu39lc0rnoxwzs-xmw-9ywflmzcskj" />
+        <title>FastPay</title>
+        <link href="gofastpay.css" rel="stylesheet" />
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+        <script type="text/javascript">            
+            $(document).ready(function() {
+                // Scale fonts
+                $('.testimonial q').each(function(){
+                    // Get the actual number of chars
+                    var charcount = $(this).text().trim().split(/\s/).join(' ').length
+                    // 120 is the magic number for sqrt scaling :)
+                    var multiplier = Math.min(Math.ceil(40 * Math.sqrt(120/charcount)), 40) 
+                    $(this).css("font-size", multiplier + 'px')
+                })
+                
+                var turns = 0; // turn counter to make sure user does not overshoot range.
+                // Forward slide
+                $('#forward-arrow').click(function() {
+                    if(turns < 4) {
+                      turns += 1
+                      $('#logo-list').animate({marginLeft: "-=300"}, 1000)
+                    }
+                })
+                
+                // Back slide
+                $('#backward-arrow').click(function() {
+                    if(turns > 0) {
+                        turns -= 1
+                        $('#logo-list').animate({marginLeft: "+=300"}, 1000)
+                    }
+                })
+                
+                // Testimonial Swapping
+                $('#logo-list img').click(function(e) {
+                    var idx = $('#logo-list img').index(e.target)
+                    var testimonials = $('.testimonial')
+                    var explanantions = $('.explanation')
+                    testimonials.hide()
+                    explanantions.hide()
+                    $(testimonials[idx]).fadeIn('slow')
+                    $(explanantions[idx]).fadeIn('slow')
+                })
+            })
+        </script>
+        
+        <script type="text/javascript">
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-29716383-1']);
+          _gaq.push(['_setDomainName', 'gofastpay.com']);
+          _gaq.push(['_trackPageview']);
+        
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+        </script>     
+    </head>
+    <body>
+        <div class="clients content">
+            <div id="navigation">
+                <a href="/"><img src="images/navigation/fpplogo.png" alt="FastPay logo" id="logo" /></a>
+                <ul id="navlinks">
+                    <li id="nav-how-it-works">
+                        <a href="how-it-works">How It Works</a>
+                    </li>
+                    <li id="nav-clients">
+                        <a href="clients" class="selected">Clients</a>
+                    </li>
+                     <li id="nav-news">
+                        <a href="news">Press</a>
+                    </li>
+                    <li id="nav-contact">
+                        <a href="contact">Contact</a>
+                    </li>
+                    <li id="nav-blog">
+                        <a href="http://fastpay.tumblr.com">Blog</a>
+                    </li>
+                    <li id="nav-get-started">
+                        <a href="contact"><img src="images/navigation/getstarted.png" alt="Get started"/></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="clients content">
+            <div id="fold">
+                <div id="testimonials">
+                    <div class="testimonial hidden">
+                        <q>                           
+                            Working with FastPay allowed us to invest in our company much faster than we would have been able to otherwise.
+                        </q>
+                        <img src="images/clients/logos/brightline-color.png" alt="Brightline" />
+                        <hr />
+                        <cite>James Nicholson, CEO</cite>
+                    </div>
+                    <div class="testimonial hidden">
+                        <q>
+                           I mean it was literally 48 hours and we had our funding.
+                           They’re like the best thing ever. I don’t actually think I’d be in business if it wasn’t for FastPay.
+                        </q>
+                        <img src="images/clients/logos/destructoid-color.png" alt="Destructoid" />
+                        <hr />
+                        <cite>Yanier Gonzalez, CEO</cite>
+                    </div>
+                    <div class="testimonial show">
+                        <q>
+                            We feel very fortunate to have a partner that understands our business and is willing to underwrite our growth.
+                        </q>
+                        <img src="images/clients/logos/giant-media-color.png" alt="Giant Media" />
+                        <hr />
+                        <cite>David Segura, CEO</cite>
+                    </div>
+                    <div class="testimonial hidden">
+                        <q>
+                            FastPay thoroughly understands my business and I doubt anybody could be a better financial partner.
+                         </q>
+                        <img src="images/clients/logos/gossip-color.png" alt="Gossip Center" />
+                        <hr />
+                        <cite>Steven Mandell, CFO</cite>
+                    </div>
+                    <div class="testimonial hidden">
+                        <q>
+                            We met FastPay and enjoyed the chemistry straight out of the gate, and the impact on the studio from a positive perspective was immediate.
+                        </q>
+                        <img src="images/clients/logos/heavenspot-color.png" alt="Heavenspot" />
+                        <hr />
+                        <cite>Michael Romero, Managing Director &amp; Partner - Heavenspot</cite>
+                    </div>
+                    <div class="testimonial hidden">
+                        <q>
+                            FastPay has allowed us to build a real American success story; old fashioned building a business from the ground up, without raising venture capital and without incurring debt.
+                        </q>
+                        <img src="images/clients/logos/moguldom-color.png" alt="Moguldom" />
+                        <hr />
+                        <cite>Jamarlin Martin, Founder &amp; CEO</cite>
+                    </div>
+                    <div class="testimonial hidden">
+                        <q>
+                            We’re now able to focus on designing and building games as opposed to focusing on managing cash flow, and that’s exactly what Fast Pay has allowed us to do.
+                        </q>
+                        <img src="images/clients/logos/pagefad-color.png" alt="Pagefad" />
+                        <hr />
+                        <cite>Adam Alfin, Co-Founder &amp; CEO</cite>
+                    </div>
+                    <div class="testimonial hidden">
+                        <q>
+                            It lets us be more flexible. We use it when we need it and it just works seamlessly.
+                        </q>
+                        <img src="images/clients/logos/sabertooth-color.png" alt="Sabertooth" />
+                        <hr />
+                        <cite>David Cullipher, Founder &amp; Creative Director</cite>
+                    </div>
+                    
+                    <table id="client-logo-slider">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <img class="slider-arrow" id="backward-arrow" src="images/clients/Nav-left.png" alt="Previous" />
+                                </td>
+                                <td id="logo-list-container-cell">
+                                    <div id="logo-list-container">
+                                        <ul id="logo-list">
+                                            <li>
+                                                <a href="#brightline"><img src="images/clients/logos/brightline-bw.png" alt="Brightline" /></a>
+                                            </li>
+                                            <li>
+                                                <a href="#destructoid"><img src="images/clients/logos/destructoid-bw.png" alt="Destructoid" /></a>
+                                            </li>
+                                            <li>
+                                                <a href="#giant-media"><img src="images/clients/logos/giant-media-bw.png" alt="Giant Media" /></a>
+                                            </li>
+                                            <li>
+                                                <a href="#gossip-center"><img src="images/clients/logos/gossip-bw.png" alt="Gossip Center" /></a>
+                                            </li>
+                                            <li>
+                                                <a href="#heavenspot"><img src="images/clients/logos/heavenspot-bw.png" alt="Heavenspot" /></a>
+                                            </li>
+                                            <li>
+                                                <a href="#moguldom"><img src="images/clients/logos/moguldom-bw.png" alt="Moguldom" /></a>
+                                            </li>
+                                            <li>
+                                                <a href="#pagefad"><img src="images/clients/logos/pagefad-bw.png" alt="Pagefad" /></a>
+                                            </li>
+                                            <li>
+                                                <a href="#sabertooth"><img src="images/clients/logos/sabertooth-bw.png" alt="Sabertooth" /></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </td>
+                                <td>
+                                    <img class="slider-arrow" id="forward-arrow" src="images/clients/Nav-right.png" alt="Next" />
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        
+        <div class="clients content">
+            <div id="explanation">
+                <div class="explanation hidden">
+                    <h1>How We Helped Brightline</h1>
+                    <p>
+                       Brightline Media’s network of websites has quickly grown into a leading destination for forward-thinking, modern women, and this growth has created its own challenges.  “We were working with ad networks whose payment cycles were up to five and six months long, yet we incurred the costs of running the business – writers, designers, marketing, web hosting – all the things that go into maintaining and growing a publishing company, all in real time,” explains CEO James Nicholson.  “Working with FastPay allowed us to invest in our company much faster than we would have been able to otherwise. FastPay allowed us to tap into our receivables, and they were able to reduce our payment cycle from a period of months to literally a period of days, and they’ve been great to deal with. They always do what they say they’re going to do and they do it very quickly. I was definitely surprised at how much of the process, once it was set up, was just taken care of on their end. It’s nice to receive a check at the end of each month and not have to worry about all the accounting aspects of it. They take care of it all. So it’s been seamless and the service has been great.”
+                   </p>
+                   <p>
+                       A veteran entrepreneur, Nicholson explains “for start-ups that are considering financing, you should really think twice about whether you want to give up your equity. I think the FastPay services are a much better fit for a wide variety of start-ups and a lot of companies are just not aware that this type of financing even exists. It’s actually a much more appropriate form of financing for start-ups because you don’t give up any equity and it just makes it much faster and much easier – it’s cash to build your business in a much shorter period of time.”
+                    </p>
+                </div>
+                <div class="explanation hidden">
+                    <h1>How We Helped Destructoid</h1>
+                    <p>
+                       Destructoid.com is a huge success: with millions of followers, the site has grown into one of the top, most respected gaming sites worldwide, taking home four Webby Nominations in the gaming category since the site's inception in 2006.  But growth has not come without its share of challenges. “Our primary source of income is advertising and it took us a really long time to figure out how we were going to be able to sustain cash flow and continue to grow,” explains founder and CEO Yanier Gonzalez.  “I went to my banker and the first time I walked in there to get a loan and had to explain what I did for a living, they were just like ‘what?’, they didn’t understand my business. Then I discovered FastPay. They got it from day one.  I mean it was literally 48 hours and we had our funding. They’re like the best thing ever. I don’t actually think I’d be in business if it wasn’t for FastPay.”    
+                    </p>
+                </div>
+                <div class="explanation show">
+                    <h1>How We Helped Giant Media</h1>
+                    <p>
+                       Giant Media has been innovating social video since 2009.  In early 2011, they made the leap from the industry's premier social video white-label provider to working directly with brands and agencies, delivering better service and stronger publisher relationships.  FastPay has worked with Giant since the very beginning, helping to provide working capital to keep pace with their rapid growth. CEO David Segura explains, “FastPay has been critical to our success.  We feel very fortunate to have a partner that understands our business and is willing to underwrite our growth.”
+                    </p>
+                </div>
+                <div class="explanation hidden">
+                    <h1>How We Helped Gossip Center</h1>
+                    <p>
+                        Founded in 2003, GossipCenter is one of the top entertainment news networks in the world. GossipCenter was created back in March of 2003 by a group of girls located in Los Angeles, the Midwest, and New York City that were “obsessed” with celebrity gossip and entertainment news in general. Now, dozens of employees produce hundreds of researched/original articles on a monthly basis.  This dedication to excellence by the GossipCenter team has produced millions of loyal users around the world.
+                    </p>
+                    <p>
+                        GossipCenter CFO Steven Mandell explains, “FastPay thoroughly understands my business and I doubt anybody could be a better financial partner. I found that FastPay always lives up to all of their promises and they offer competitive rates with no hidden fees. Customer service is outstanding and they are able to fund the advances almost immediately. Their reporting is user friendly and complete. A significant competitive advantage to FastPay is their ability to quickly increase the funding when needed, as our demand for capital is very seasonal. I would recommend FastPay &mdash; without hesitation or qualification.”    
+                    </p>
+                </div>
+                <div class="explanation hidden">
+                    <h1>How We Helped Heavenspot</h1>
+                    <p>
+                        Heavenspot is an independent Creative Agency that works closely with major consumer brands, movie studios and advertising agencies to concept and execute marketing strategies with a digital emphasis.  Adobe, Disney, 20th Century Fox, Marvel, Paramount Pictures and Warner Bros. have all turned to the trailblazing team for groundbreaking advertising, design, web technology, animation and production.
+                    </p>   
+                    <p>
+                        But payment cycles and project deadlines don’t always overlap, and that’s where FastPay comes in.  “FastPay has been a great match for Heavenspot” says Managing Director Michael Romero. “We’d actually worked with anther finance company previously, but we realized that they really just weren’t the right fit. I mean, their specialty was produce and we were a digital agency. We met FastPay and enjoyed the chemistry straight out of the gate, and the impact on the studio from a positive perspective was immediate.  They have a vested interest in a mutually beneficial partnership. The human element that they bring has just been amazing to work with; they are always flexible and accommodating and they understand the world we’re in. Having that kind of support behind us really makes what we do possible.“    
+                    </p>
+                </div>
+                <div class="explanation hidden">
+                    <h1>How We Helped Moguldom</h1>
+                    <p>
+                       Moguldom Media Group is the world’s largest network of owned and operated digital brands focusing on African Americans as measured by comScore online reach. Their premium online brands capture the pulse of diverse segments of the urban market to deliver rich, compelling experiences across multiple media channels including online video, mobile, and social media platforms.  FastPay is proud to be a part of the Moguldom story.  Founder and CEO Jamarlin Martin say “FastPay has allowed us to build out a real American success story in terms of old fashioned building a business from the ground up, without raising venture capital and without incurring debt. Just hard work, creativity, and being scrappy. We wanted to scale the business and accelerate our growth plans but didn’t want to give up equity and take on the risks of giving up control.”
+                    </p>
+                    <p>  
+                        Asked what the experience of working with FastPay is like, Martin explains, “FastPay has been easy to work with. They have great flexibility and excellent customer service, and they are extremely knowledgeable about digital media and digital advertising space. Working with FastPay has allowed us to grow without debt or venture capital. We wouldn’t have been able to scale as fast as we’re scaling without FastPay – they’ve been an excellent partner.”
+                    </p>
+                </div>
+                <div class="explanation hidden">
+                    <h1>How We Helped OnlineAthletes</h1>
+                    <p>
+                       Founded in 2008 by tech savvy sports fanatics, OnlineAthletes has taken 'fantasy sports' to a whole new level with a slight twist: turning friends into professional online athletes. What began on Facebook as Premier Football (a team-based, team-competition, soccer application) quickly grew into the #1 sports application on Facebook and the largest sports application in the social networking space. This success revolutionized fantasy sports and created a niche in the online sports gaming vertical. There are more than 2 million team managers and 25 million online users participating from over 150 countries.  
+                    </p>
+                    <p>
+                       “The social gaming space moves at a very rapid pace. Things are always changing, so you must learn how to adapt - and FastPay has really helped us do just that,” says CEO &amp; Co-Founder Adam Alfin. “It was a ‘no-brainer’ for us to partner with FastPay once we discovered them as a potential resource.  FastPay has been a major part of helping us grow.  We’re now able to focus on designing and building games as opposed to focusing on managing cash flow, and that’s exactly what Fast Pay has allowed us to do.  They’ve developed a really creative finance solution that’s been essential to helping us move quickly and concentrate on what matters most - developing high quality games for social entertainment.”
+                    </p>
+                </div>
+                <div class="explanation hidden">
+                    <h1>How We Helped Sabertooth Interactive</h1>
+                    <p>
+                       Los Angles based Sabertooth Interactive is a digital Creative Agency that works with major brands and agencies to create cutting edge, engaging digital campaigns.  Saberooth’s growth has been explosive, and so have its challenges. Founder &amp; Creative Director David Cullipher explains, “we’ve been growing at a rate of 30 to 35 percent a year. Adding jobs. Adding employees. Doing great work. And doing it all ourselves without a large deep pocketed investor. It’s quite a challenge because you have receivables from major companies, Fortune 100 companies, and there was no real options for us to leverage those assets to fund the business. Banks aren’t being that flexible with lines of credit no matter how long you’ve in business. So, when we ran across FastPay and I found out how their rates worked, and it just works perfectly. It is more of a business financing program, and it’s better than any other program that’s out there. It lets us be more flexible. We use it when we need it and it just works seamlessly. There’s no weird things for our clients. There’s no weird things for my bookkeepers. It’s easy to manage and easy to use.”    
+                    </p>
+                </div>
+                <a href="contact"><img src="images/widgets/Let-Us-Help_button.png" alt="Let us help your company"></a>     
+            </div>
+        </div>
+        
+        <div class="clients content">
+            <div id="contact">
+                <h2>Contact</h2>                
+                <address>
+                    <div id="say-hello" class="contact-section">
+                        <h4>Say hello:</h4>
+                        <p>contact@gofastpay.com</p>
+                        <p>P+ (310) 651-9200</p>
+                        <h4>Follow us:</h4>
+                        <p><a href="http://www.linkedin.com/company/964255?trk=tyah" target="_blank"><img src="images/widgets/Linkedin.png" alt="LinkedIn"/></a></p>
+                        <p><a href="http://twitter.com/#!/GoFastPay" target="_blank"><img src="images/widgets/Twitter.png" alt="Twitter" /></a></p>                     
+                    </div>                    
+                    <div id="contact-address" class="contact-section">
+                        <h4>Address:</h4>
+                        <p>9300 Wilshire</p>
+                        <p>Suite 550</p>
+                        <p>Beverly Hills, CA 90212</p>
+                    </div>                    
+                    <div id="join-us" class="contact-section">           
+                        <h4>Join us:</h4>  
+                        <p><a href="jobs">Employment Opportunities</a></p>
+                    </div>                  
+                </address>
+                <div id="copyright">
+                    Copyright 2012 &copy; Fast Pay Partners LLC
+                </div>
+            </div>
+        </div>
+        <!-- Start of HubSpot Tracking Code -->
+<script type="text/javascript" language="javascript"> var hs_portalid=211844; var hs_salog_version = "2.00"; var hs_ppa = "gofastpay.app13.hubspot.com"; document.write(unescape("%3Cscript src='" + document.location.protocol + "//" + hs_ppa + "/salog.js.aspx' type='text/javascript'%3E%3C/script%3E")); </script>
+<!-- End of HubSpot Tracking Code -->
+    </body>
+</html>

@@ -1,0 +1,919 @@
+/* Font CSS */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@font-face {
+    font-family: 'Apex New Medium';
+    src: url('fonts/apexnew-medium-webfont.eot');
+    src: url('fonts/apexnew-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/apexnew-medium-webfont.woff') format('woff'),
+         url('fonts/apexnew-medium-webfont.ttf') format('truetype'),
+         url('fonts/apexnew-medium-webfont.svg#') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Apex New Bold';
+    src: url('fonts/apexnew-bold-webfont.eot');
+    src: url('fonts/apexnew-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/apexnew-bold-webfont.woff') format('woff'),
+         url('fonts/apexnew-bold-webfont.ttf') format('truetype'),
+         url('fonts/apexnew-bold-webfont.svg#') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Apex New Light';
+    src: url('fonts/apexnew-light-webfont.eot');
+    src: url('fonts/apexnew-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/apexnew-light-webfont.woff') format('woff'),
+         url('fonts/apexnew-light-webfont.ttf') format('truetype'),
+         url('fonts/apexnew-light-webfont.svg#') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham Thin Regular';
+  src: url('fonts/gotham-thin-webfont.eot');
+  src: url('fonts/gotham-thin-webfont.eot?#iefix') format('embedded-opentype');
+  src: url('fonts/gotham-thin-webfont.woff') format('woff'), 
+       url('fonts/gotham-thin-webfont.ttf') format('truetype'),
+       url('fonts/gotham-thin-webfont.svg#') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham Bold Regular';
+  src: url('fonts/gotham-bold-webfont.eot');
+  src: url('fonts/gotham-bold-webfont.eot?#iefix') format('embedded-opentype');
+  src: url('fonts/gotham-bold-webfont.woff') format('woff'), 
+       url('fonts/gotham-bold-webfont.ttf') format('truetype'),
+       url('fonts/gotham-bold-webfont.svg#') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+/* IE fix for transparency */
+img {
+    border: none;
+}
+
+.content {
+    width: 1024px;
+    margin: auto;
+    text-align: left;
+    clear: both;
+}
+
+/* Navigation styles */
+#navigation {
+    z-index: 10000;
+    width: 1024px;
+    font-family: 'Open Sans', Verdana, sans-serif;
+    font-size: 14px;
+    text-transform: lowercase;
+    background-color: #F9F9F9;
+    padding: 16px 0 16px 0;
+    /* shadow division */
+    -webkit-box-shadow: 0 4px 2px -2px gray;
+    -moz-box-shadow: 0 4px 2px -2px gray;
+    box-shadow: 0 4px 2px -2px gray;
+    margin-bottom: 2px;
+    /* overflow controls */
+    overflow: hidden;
+}
+
+#navigation a {
+    color: #4d4d4d;
+    text-decoration: none;
+}
+
+#navigation ul {
+    padding: 6px 0 6px 0;
+}
+
+#navigation li {
+    float: left;
+    display: inline-block;
+    list-style-type: none;
+    line-height: 30px;
+    vertical-align: middle;
+}
+
+#navigation li a {
+    padding: 10px 20px;
+}
+
+/* button insets via CSS hackery */
+#navigation li#nav-what-we-do a:hover, #navigation li#nav-what-we-do a.selected {
+    background: url('images/navigation/buttons/1.png') center center no-repeat;
+}
+
+#navigation li#nav-how-it-works a:hover, #navigation li#nav-how-it-works a.selected {
+    background: url('images/navigation/buttons/2.png') center center no-repeat;   
+}
+
+#navigation li#nav-clients a:hover, #navigation li#nav-clients a.selected {
+    /* news button background (4.png) seems to fit better // temporary hack */
+    background: url('images/navigation/buttons/4.png') center center no-repeat;  
+}
+
+#navigation li#nav-news a:hover, #navigation li#nav-news a.selected {
+    background: url('images/navigation/buttons/4.png') center center no-repeat;
+}
+
+#navigation li#nav-contact a:hover, #navigation li#nav-contact a.selected {
+    background: url('images/navigation/buttons/5.png') center center no-repeat;
+}
+
+#navigation li#nav-blog a:hover, #navigation li#nav-blog a.selected {
+    background: url('images/navigation/buttons/6.png') center center no-repeat;
+}
+
+#navigation li#nav-get-started a {
+    padding-right: 0px;
+    margin-left: 40px;
+}
+
+#navigation #logo {
+    float: left;
+    padding: 0px 180px 0px 60px;
+}
+
+/* Contact bar */
+#contact {
+    padding: 60px 154px;
+    background-color: black;
+    color: white;
+    overflow: auto;
+    
+}
+
+#contact a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#contact .contact-section {
+    width: 33%;
+    float: left;
+}
+
+#contact h2 {
+    font-size: 20px;
+    font-family: 'Gotham Bold Regular', sans-serif;
+    text-transform: uppercase;
+}
+
+#contact h4 {
+    color: #a9a25b;
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 14px;
+}
+
+#contact p {
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    color: rgb(189, 189, 189);
+    width: 85%;
+    margin-right: 96px;
+    padding-bottom: 4px;
+    border-bottom: rgb(81, 81, 81) solid 1px;
+}
+
+address {
+    font-style: normal;
+}
+
+/* Splash screen */
+#fold {
+    background-color: rgb(237,237,237);
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.news #fold, .contact #fold {
+    padding-bottom: 120px;
+}
+
+#leader {
+    float: left;
+    padding: 148px 0 0 60px;
+    width: 408px;
+}
+
+.home #leader {
+    width: auto;
+}
+
+.leader.short {
+    width: 408px;
+}
+
+.leader.tall {
+    float: left;
+    width: 460px;
+}
+
+#marquee {
+    float: left;
+    margin-left: 40px;
+}
+
+#marquee img {
+    padding-top: 60px;
+}
+
+#marquee img.short {
+    margin-bottom: 52px;
+}
+
+#marquee img.tall {
+    margin-bottom: 10px;
+    margin-left: 0px;
+}
+
+.what-we-do #marquee img {
+    padding-bottom: 90px;
+}
+
+#marquee-switch {
+    float: left;
+    clear: both;
+    width: 100%;
+    text-align: center;
+    margin: 0 5px 20px 5px;
+}
+
+.leader {
+    font-family: 'Apex New Medium', sans-serif;
+}
+
+.leader .title {
+    font-size: 48px; /* 48pt; */
+    color: #282828;
+    margin-bottom: 24px;
+}
+    
+.leader .sub {
+    font-size: 17px; /* 17pt; */
+    color: #5c5c5c;
+    line-height: 150%; /* 26pt; */
+}
+    
+.tagline {
+    font-family: 'Apex New Medium', sans-serif;
+    font-size: 32px;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    letter-spacing: 0.075em;
+}
+
+.tagline .learn-more-link {
+    font-size: 16px;
+    vertical-align: middle;
+    margin-left: 36px;
+    letter-spacing: normal;
+}
+
+.tagline .learn-more-link img {
+    vertical-align: middle; /* Seems to line up the arrow just right! */
+}
+
+/* Breaking styles */
+
+.learn-more-link {
+    font-family: 'Apex New Medium', sans-serif;
+}
+
+.learn-more-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.break {
+    float: left;
+    clear: both;
+    width: 100%;
+}
+
+.break.thick {
+    padding-top: 90px;
+    padding-bottom: 82px;
+}
+
+
+.black {
+    background-color: black;
+}
+
+.turquoise {
+    background-color: #00a8e0;
+}
+
+#explanation {
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+    padding: 60px 135px;
+}
+
+#explanation h1 {
+    font-size: 24px;
+    font-family: 'Apex New Medium', sans-serif;
+    text-align: inherit;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#explanation p {
+    color: rgb(155,155,155);
+    line-height: 28px;
+    font-size: 18px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.what-we-do #explanation p  {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.how-it-works #explanation p {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#explanation p strong {
+    font-weight: bold;
+    color: rgb(0, 158, 204);
+}
+
+/* Beginning of the Home Page sections (using .home to cordon off home page styling)*/
+
+/* What We Do Section */
+
+.home #what-we-do {
+    float: left;
+    padding-top: 72px;
+    padding-bottom: 90px;
+}
+
+.home .description {
+    float: left;
+    font-family: Helvetica, sans-serif;
+}
+
+.home #how-it-works {
+    float: left;
+    padding-bottom: 90px;
+}
+
+.home #what-we-do .description {
+    width: 50%;
+}
+
+.home .description h3 {
+    color: #282828;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: bold;
+    padding-left: 115px;
+}
+    
+.home .description p {
+    font-size: 14px;
+    color: #4d4d4d;
+    line-height: 26px;
+    padding-left: 115px;
+}
+
+.home #banker-quote {
+    float: right;
+    width: 50%;
+}
+
+.home blockquote.banker-quote {
+    font-family: "Gotham Thin Regular", sans-serif;
+    color: #4d4d4d;
+    font-size: 40px;
+    line-height: 40px;
+    margin: 0;
+    padding-top: 10px;
+    padding-left: 64px;
+    font-weight: 200;
+}
+
+/* How it works stylings */
+
+.home #how-it-works h2 {
+    padding-top: 62px;
+    padding-bottom: 58px;
+    text-align: center;
+    font-family: 'Apex New Light', sans-serif;
+    text-transform: uppercase;
+    color: #282828;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 4px;
+}
+
+.home .opportunity {
+    width: 33%;
+    float: left;
+}
+
+.home .opportunity p  {
+    font-family: 'Georgia', serif;
+    font-size: 12px;
+    line-height: 22px;
+    letter-spacing: 1px;
+    padding-left: 32px;
+    padding-right: 32px;
+    color: #555;
+    text-align: center;
+}
+
+.home .opportunity img {
+    margin: auto;
+    display: block;
+}
+
+.home .opportunity div.middle {
+    border-left: 2px solid #e5e5e5;
+    border-right: 2px solid #e5e5e5;
+}
+
+.home .learn-about {
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: normal;
+    text-align: center;
+    color: rgb(0, 168, 224);
+}
+
+.home .opportunity .learn-about {
+    margin-top: 45px;
+    color: rgb(0, 168, 224);
+}
+
+.home .opportunity .opportunity-link {
+    font-family: Georgia, serif;
+    font-size: 18px;
+    color: inherit;
+    text-decoration: none;
+}
+
+.home .opportunity .opportunity-link img {
+    display: inline-block;
+}
+
+/* Who we help */
+
+.home #who-we-help {
+    background-color: #efefef;
+    padding-bottom: 90px;
+    float: left;
+}
+
+.home #who-we-help .description {
+    width: 50%;
+}
+
+.home #who-we-help h2 {
+    padding-top: 84px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: "Gotham Bold Regular", sans-serif;
+}
+
+.home #who-we-help blockquote {
+    font-family: Georgia, serif;
+    font-size: 36px;
+    text-align: center;
+    color: rgb(159, 140, 107);
+}
+
+.home #who-we-help cite {
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;
+    text-align: center;
+    font-style: normal;
+    text-align: center;
+    display: block;
+    margin: auto;
+    padding-bottom: 24px;
+}
+
+.home #who-we-help cite .name {
+    font-weight: bold;
+}
+
+.home #who-we-help cite .title {
+    font-style: italic;
+}
+
+.home #who-we-help hr {
+    width: 252px;
+    margin: auto;
+    margin-bottom: 24px;
+}
+
+.home #who-we-help .description p {
+    color: rgb(167, 167, 167);
+}
+
+.home #logo-wall {
+    float: right;
+    width: 50%;
+}
+
+.home #logo-wall img {
+    padding-left: 32px;
+    padding-top: 20px;
+}
+
+.home #what-makes-us-different {
+    padding-top: 90px;
+    padding-left: 0;
+}
+
+.home #what-makes-us-different .description {
+    padding: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.home #what-makes-us-different .description h3 {
+    padding: 0; /* Reset padding for centering */
+}
+
+.home #what-makes-us-different .description p {
+    padding: 0; /* Reset padding for centering */
+}
+
+.home #what-makes-us-different .postscript {
+    font-family: Georgia, serif;
+    font-size: 15px;
+    line-height: 28px;
+    color: #8f8f8f;
+    padding-left: 115px;
+    padding-right: 115px;
+    text-align: center;
+    clear: both;
+}
+
+.home #what-makes-us-different .learn-about {
+    margin: auto;
+    margin-bottom: 76px;
+}
+
+.home #what-makes-us-different hr {
+    width: 130px;
+    margin: 40px auto;
+}
+
+.home #what-makes-us-different a.learn-about-link {
+    font-family: Georgia, serif;
+    font-size: 21px;
+    text-decoration: none;
+    color: rgb(0, 168, 224);
+}
+
+.home #statistics {
+    margin: auto;
+    width: 100%;
+    padding-left: 115px;
+    padding-right: 115px;
+    font-family: Helvetica, sans-serif;
+}
+
+.home #statistics .stat {
+    float: left;
+    font-size: 110px;
+    font-weight: bold;
+}
+
+.home #statistics .percent {
+    vertical-align: top;
+    padding-top: 26px;
+}
+
+.home #statistics .slash {
+    float: left;
+    padding: 0 20px 0 20px;
+    vertical-align: bottom;
+    display: inline-block;
+}
+
+
+.home #statistics .caption {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.what-we-do #apply-fund-done {
+    text-align: center;
+    overflow: auto;
+    padding: 60px 48px 90px 48px;
+    background-color: rgb(237, 237, 237);
+}
+
+.what-we-do #apply-fund-done h2 {
+    font-family: 'Gotham Bold Regular', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding-bottom: 20px; 
+}
+
+.what-we-do #apply-fund-done hr {
+    width: 432px;
+    margin-bottom: 60px;
+}
+
+.what-we-do #apply-fund-done h3 {
+    font-family: Helvetica, sans-serif;
+    font-size: 20px;    
+}
+
+.what-we-do #apply-fund-done .stage {
+    width: 33%;
+    float: left;
+}
+
+.what-we-do #apply-fund-done .stage p {
+    color: rgb(143,143,143);
+    font-family: Georgia, serif;
+    font-size: 16px;
+    line-height: 32px;
+}
+
+.what-we-do #apply-fund-done .stage p {
+    color: rgb(143, 143, 143);
+    font-family: Georgia, serif;
+    font-size: 16px;
+    line-height: 32px;
+}
+
+.what-we-do #apply-fund-done .stage p.center {
+    padding: 0 40px;
+}
+
+.what-we-do #apply-fund-done .stage p strong {
+    color: black;
+    font-style: italic;
+}
+
+.hidden {
+    display: none;
+}
+
+#testimonials {
+    padding: 75px 90px;
+    clear: both;
+}
+
+.clients .testimonial {
+    text-align: center;
+    color: rgb(40, 40, 40);
+}
+
+.clients .testimonial q {
+    font-size: 40px;
+    font-family: 'Apex New Medium', sans-serif;
+    display: block;
+    margin-bottom: 14px;
+    min-height: 180px;
+}
+
+
+.clients .testimonial hr {
+    color: rgb(156, 156, 156);
+    width: 24px;
+    margin: 24px auto;
+}
+
+.clients .testimonial cite {
+    display: block;
+    font-style: normal;
+    font-size: 14px;
+    font-family: 'Apex New Medium', sans-serif;
+    padding-bottom: 20px;
+}
+
+.clients .explanation p {
+    text-align: justify;
+}
+
+#client-logo-slider {
+    display: block;
+    overflow-x: hidden;
+}
+
+#client-logo-slider .slider-arrow {
+    display: block;
+}
+
+#client-logo-slider #backward-arrow {
+    float: left;
+    padding-right: 20px;
+}
+
+#client-logo-slider #forward-arrow {
+    float: right;
+    padding-left: 20px;
+}
+
+#client-logo-slider td#logo-list-container-cell {
+    width: auto;
+}
+
+#logo-list-container {
+    overflow-x: hidden;
+    width: 760px;
+}
+
+#client-logo-slider ul {
+    display: inline-block;
+    list-style-type: none;
+    width: 100000px;
+}
+
+#client-logo-slider ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+/* How it works */
+
+.how-it-works #fold {
+    padding-top: 30px;
+    padding-bottom: 75px;
+}
+
+.how-it-works #buttons {
+    margin: auto;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.how-it-works #buttons img {
+    margin: auto 10px;
+}
+
+#carousel {
+    margin: auto;
+    text-align: center;
+}
+
+#carousel img {
+    position: relative;
+}
+
+#carousel .top {
+    z-index: 40;
+    padding: 0;
+    width: 360px;
+}
+
+#carousel .middle {
+    z-index: 30;
+    padding: 40px;
+    width: 280px;
+}
+
+#carousel .bottom {
+    z-index: 20;
+    padding: 40px;
+    width: 280px;
+}
+
+#carousel img#left-image {
+    margin-left: 0px;
+}
+
+#carousel img#center-image {
+    margin-left: -150px;
+}
+
+#carousel img#right-image {
+    margin-left: -150px;
+}
+
+.contact #fold #leader {
+    width: 440px;
+    margin-left: 100px;
+}
+
+.contact #fold #marquee {
+    margin-left: 75px;
+    padding-top: 90px;
+}
+
+.contact #explanation {
+    padding-bottom: 0;
+}
+
+.contact #explanation p {
+    font-family: Helvetica, sans-serif;
+    color: rgb(55, 55, 55);
+}
+
+.news #marquee {
+    padding-top: 60px;
+}
+
+.news #news-stories {
+    text-align: left;
+    font-family: Helvetica, sans-serif;
+    margin: 0 104px 75px 104px;
+}
+
+.news #news-stories .news-item {
+    clear: both;
+    margin-bottom: 1.5em;
+    overflow: auto;
+}
+
+.news #news-stories .news-item h3 {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.news #news-stories .news-item p {
+    color: rgb(77,77,77);
+    font-size: 14px;
+    line-height: 26px;
+}
+
+.news #news-stories .news-item .pull {
+    font-weight: bold;
+}
+
+.news #news-stories .news-item img.news-logo {
+    float: left;
+    width: 180px;
+}
+
+.news #news-stories .news-item .news-body {
+    width: 600px;
+    float: right;
+    margin-left: 30px;
+}
+
+.news #news-stories .news-item a.read-more {
+    display: inline-block;
+    float: right;
+    font-family: 'Open Sans Regular', sans-serif;
+    font-size: 14px;
+    color: rgb(0, 158, 204);
+    font-weight: bold;
+    margin-right: 40px;
+    text-decoration: none;
+}
+
+.news #news-stories .news-item a.read-more img {
+    vertical-align: middle;
+}
+
+#copyright {
+    padding-top: 60px;
+    color: #5a5a5a;
+    text-align: center;
+    clear: both;
+    font-size: 0.65em;
+}
+
+.home #press-logos {
+    overflow: auto;
+    padding: 0.5em 0 1em 1.66em; 
+}
+
+.home #press-logos ul {
+  padding: 0; 
+}
+
+.home #press-logos li {
+    width: 10%;
+    display: inline-block;
+    list-style: none;
+    float: left;
+}
+
+.home #press-logos img {
+    margin: auto;
+    text-align: center;
+    list-style: none;
+    height: 65px;
+}
