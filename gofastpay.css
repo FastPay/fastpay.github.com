@@ -322,13 +322,18 @@ address {
     background-color: #00a8e0;
 }
 
-#explanation {
+#explanation, .explanation {
     font-family: Helvetica, sans-serif;
     text-align: center;
     padding: 60px 135px;
 }
 
-#explanation h1 {
+.about .explanation {
+    padding: 35px 100px 20px 100px;
+    text-align: left;
+}
+
+#explanation h1, .about h1.sub-section {
     font-size: 24px;
     font-family: 'Apex New Medium', sans-serif;
     text-align: inherit;
@@ -336,12 +341,22 @@ address {
     letter-spacing: 2px;
 }
 
-#explanation p {
+.about h1.sub-section {
+    text-align: center;
+    padding-bottom: 35px;
+}
+
+#explanation p, .explanation p {
     color: rgb(155,155,155);
     line-height: 28px;
     font-size: 18px;
     padding-top: 20px;
     padding-bottom: 20px;
+}
+
+.about #explanation p, .about .explanation p {
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 .what-we-do #explanation p  {
