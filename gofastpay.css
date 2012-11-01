@@ -126,6 +126,12 @@ img {
     background: url('images/navigation/buttons/4.png') center center no-repeat;  
 }
 
+#navigation li#nav-about a:hover, #navigation li#nav-about a.selected {
+    /* news button background (4.png) seems to fit better // temporary hack */
+    background: url('images/navigation/buttons/4.png') center center no-repeat;  
+}
+
+
 #navigation li#nav-news a:hover, #navigation li#nav-news a.selected {
     background: url('images/navigation/buttons/4.png') center center no-repeat;
 }
@@ -140,7 +146,7 @@ img {
 
 #navigation li#nav-get-started a {
     padding-right: 0px;
-    margin-left: 40px;
+    margin-left: 20px;
 }
 
 #navigation #logo {
