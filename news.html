@@ -21,6 +21,46 @@
             var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
           })();
         </script>
+        
+        <!-- Pagination -->
+        <link rel="stylesheet" href="pagination/simplePagination.css"></script>
+        <style type="text/css">
+            div.paged {
+                display: none;
+            }
+            
+            body div.paged:first-child {
+                display: block;
+            }
+            
+            .pager {
+                text-align: center;
+            }
+            #pagination {
+                display: inline-block;
+            }
+        </style>
+        
+        <script type="text/javascript" src="pagination/jquery.simplePagination.js"></script>
+        <script type="text/javascript">
+            $(function(){
+                var stories = $("#news-stories").find(".news-item");
+                var pages= [];
+                // Splice 7 stories per page
+                do { var page = stories.splice(0,7); pages.push(page) } while(page.length != 0)
+                var realPages = pages.splice(0, pages.length - 1)
+                // Wrap each page (7 news-items) in div.paged
+                $.each(realPages, function(i,e) { $(e).wrapAll('<div class="paged"></div>') })
+                
+                var pageCount = realPages.length;
+                var pageSelector = function(pageNum) {
+                    var pages = $(".paged")
+                    pages.hide();
+                    $(pages[pageNum - 1]).show();
+                }
+                $("#pagination").pagination({pages: pageCount, onPageClick: pageSelector})
+            })
+        </script>
     </head>
     <body>
         <div class="news content">
@@ -283,9 +323,9 @@ Without FastPay, Gonzalez doesn't think his business would be thriving the way i
                     </div>
                 </div>
             </div>
-            <div class="news content">
-                <div id="pagination" style="padding-bottom: 40px; margin: auto;"></div>
-            </div>
+        </div>
+        <div class="news content pager">
+            <div id="pagination" style="padding-bottom: 40px; margin: auto;"></div>
         </div>
         <div class="news content">
             <div id="contact">
