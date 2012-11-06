@@ -57,6 +57,9 @@
                     var pages = $(".paged")
                     pages.hide();
                     $(pages[pageNum - 1]).show();
+                    $('html,body').animate({
+                        scrollTop: $("#news-stories").offset().top
+                    }, 'slow');
                 }
                 $("#pagination").pagination({pages: pageCount, onPageClick: pageSelector})
             })
