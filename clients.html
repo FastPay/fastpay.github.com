@@ -21,7 +21,7 @@
                 var turns = 0; // turn counter to make sure user does not overshoot range.
                 // Forward slide
                 $('#forward-arrow').click(function() {
-                    if(turns < 4) {
+                    if(turns < 3) {
                       turns += 1
                       $('#logo-list').animate({marginLeft: "-=300"}, 1000)
                     }
