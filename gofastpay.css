@@ -946,3 +946,7 @@ address {
     font-size: 14px;
     line-height: 26px;
 }
+
+.about #news-stories .news-logo {
+    padding-top: 1em;
+}
