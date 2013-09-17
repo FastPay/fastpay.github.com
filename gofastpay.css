@@ -938,3 +938,11 @@ address {
     list-style: none;
     height: 65px;
 }
+
+.whitepaper-intro {
+    font-family: Helvetica, sans-serif;
+    text-align: left;
+    color: rgb(77,77,77);
+    font-size: 14px;
+    line-height: 26px;
+}
