@@ -1022,7 +1022,11 @@ address {
 }
 
 .whitepaper #explanation {
-    background-image: url("images/Landing_Page.png");
+    background-image: url("images/Landing_Page.jpg");
     background-repeat: no-repeat;
     height: 330px;
+}
+
+.whitepaper #contact-form {
+    background-color: #e7e5e5;
 }
