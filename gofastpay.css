@@ -1020,3 +1020,9 @@ address {
 .news.about #news-stories .news-logo {
     margin-top: 1em;
 }
+
+.whitepaper #explanation {
+    background-image: url("images/Landing_Page.png");
+    background-repeat: no-repeat;
+    height: 330px;
+}
