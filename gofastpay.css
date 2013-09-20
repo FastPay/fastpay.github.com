@@ -34,6 +34,17 @@
 }
 
 @font-face {
+    font-family: 'Apex New Book';
+    src: url('apexnew-book-webfont.eot');
+    src: url('apexnew-book-webfont.eot?#iefix') format('embedded-opentype'),
+         url('apexnew-book-webfont.woff') format('woff'),
+         url('apexnew-book-webfont.ttf') format('truetype'),
+         url('apexnew-book-webfont.svg#apex_newbook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
   font-family: 'Gotham Thin Regular';
   src: url('fonts/gotham-thin-webfont.eot');
   src: url('fonts/gotham-thin-webfont.eot?#iefix') format('embedded-opentype');
@@ -212,6 +223,15 @@ address {
     padding-bottom: 120px;
 }
 
+.home #fold {
+    background-image: url("images/home/palm_bg.png");
+    background-size: contain;
+    height: 562px;
+    color: #FFF;
+    font-family: 'Apex New Medium', sans-serif;
+    overflow-y: hidden;
+}
+
 #leader {
     float: left;
     padding: 148px 0 0 60px;
@@ -244,21 +264,70 @@ address {
     margin-bottom: 52px;
 }
 
-#marquee img.tall {
-    margin-bottom: 10px;
-    margin-left: 0px;
-}
-
-.what-we-do #marquee img {
-    padding-bottom: 90px;
-}
-
-#marquee-switch {
+.half {
     float: left;
-    clear: both;
-    width: 100%;
-    text-align: center;
-    margin: 0 5px 20px 5px;
+    width: 50%;
+}
+
+.half hr.diag {
+    border: 0;
+    background: url("images/home/diagline.png") repeat-x top left;
+    height: 15px;
+    margin-left: -2px;
+}
+
+.half .copy-text {
+    width: 68%;
+    margin: 90px auto 0 auto;
+    padding-left: 40px;
+}
+
+.half .copy-text h1 {
+    color: #FFF;
+    font-size: 42px;
+    padding: 0;
+    margin: 0;
+}
+
+.half .copy-text p {
+    color: #EFEFEF;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.report .copy-text {
+    background-image: url("images/home/box_with_banner.png");
+    background-size: contain;
+    height: 490px;
+    margin-top: 40px;
+}
+
+.report .summary h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.report .summary {
+    padding: 70px 40px 0 0;
+}
+
+.half .report {
+    width: 85%;
+    margin: auto;
+}
+
+.half .report-date {
+    width: 50%;
+    font-size: 16px;
+}
+
+.half .report-summary p {
+    font-family: 'Apex New Book', sans-serif;
+    font-size: 14px;
+}
+
+.report #download-report {
+    float: right;
 }
 
 .leader {
@@ -947,6 +1016,6 @@ address {
     line-height: 26px;
 }
 
-.about #news-stories .news-logo {
-    padding-top: 1em;
+.news.about #news-stories .news-logo {
+    margin-top: 1em;
 }
