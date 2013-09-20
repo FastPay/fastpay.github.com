@@ -367,6 +367,28 @@ address {
     vertical-align: middle; /* Seems to line up the arrow just right! */
 }
 
+#marquee {
+    float: left;
+    margin-left: 40px;
+}
+
+#marquee img {
+    padding-top: 60px;
+}
+
+#marquee img.short {
+    margin-bottom: 52px;
+}
+
+#marquee img.tall {
+    margin-bottom: 10px;
+    margin-left: 0px;
+}
+
+.what-we-do #marquee img {
+    padding-bottom: 90px;
+}
+
 /* Breaking styles */
 
 .learn-more-link {
