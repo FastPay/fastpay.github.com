@@ -298,7 +298,7 @@ address {
 .report .copy-text {
     background-image: url("images/home/box_with_banner.png");
     background-size: contain;
-    background-repeat: none;
+    background-repeat: no-repeat;
     height: 490px;
     margin-top: 40px;
 }
