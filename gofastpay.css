@@ -151,6 +151,10 @@ img {
     background: url('images/navigation/buttons/5.png') center center no-repeat;
 }
 
+#navigation li#nav-careers a:hover, #navigation li#nav-careers a.selected {
+    background: url('images/navigation/buttons/5.png') center center no-repeat;
+}
+
 #navigation li#nav-blog a:hover, #navigation li#nav-blog a.selected {
     background: url('images/navigation/buttons/6.png') center center no-repeat;
 }
@@ -162,7 +166,7 @@ img {
 
 #navigation #logo {
     float: left;
-    padding: 0px 180px 0px 60px;
+    padding: 0px 140px 0px 60px;
 }
 
 /* Contact bar */
