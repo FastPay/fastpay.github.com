@@ -1,29 +1,3 @@
-.elongated #Field1 {
-    width: 200px;
+input#Field1 {
     size: 14;
-}
-
-.elongated .field.text.fn {
-    size: 14;
-}
-
-.elongated span input#Field1  {
-    size: 14;
-}
-
-.wufoo input.text {
-    size: 16;
-    maxlength: 60;
-    border-radius: 10px;
-    color: red;
-}
-
-input.text, input.search, textarea.textarea {
-     -moz-border-radius: 10px; /* FF1+ */
-  -webkit-border-radius: 10px; /* Saf3-4 */
-          border-radius: 10px; /* Opera 10.5, IE9, Saf5, Chrome */
-}
-
-.wufoo .info h2 {
-    color: red;
 }
