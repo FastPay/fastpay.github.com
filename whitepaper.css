@@ -13,5 +13,6 @@
 
 .wufoo input .text {
     size: 16;
-    maxlength:60;
+    maxlength: 60;
+    border-radius: 10px;
 }
