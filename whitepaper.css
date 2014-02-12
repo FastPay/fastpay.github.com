@@ -11,4 +11,7 @@
     size: 14;
 }
 
- 
+input .text {
+    size: 16;
+    maxlength:60;
+}
