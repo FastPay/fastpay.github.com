@@ -3,8 +3,11 @@
     size: 14;
 }
 
-input.field.text.fn  {
-    width: 200px;
+.elongated .field.text.fn {
+    size: 14;
+}
+
+.elongated input  {
     size: 14;
 }
 
