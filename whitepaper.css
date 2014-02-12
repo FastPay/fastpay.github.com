@@ -11,7 +11,7 @@
     size: 14;
 }
 
-input .text {
+.wufoo input .text {
     size: 16;
     maxlength:60;
 }
