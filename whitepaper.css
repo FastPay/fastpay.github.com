@@ -23,3 +23,7 @@ input.text, input.search, textarea.textarea {
   -webkit-border-radius: 10px; /* Saf3-4 */
           border-radius: 10px; /* Opera 10.5, IE9, Saf5, Chrome */
 }
+
+.wufoo .info h2 {
+    color: red;
+}
