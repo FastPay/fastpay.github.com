@@ -1,7 +1,3 @@
-#Field1 {
-    width:160px;
-}
-
-#Field2 {
-    width:160px;
+.wufoo #Field1, .wufoo #Field2 {
+    width: 160px;
 }
