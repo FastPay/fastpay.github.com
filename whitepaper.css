@@ -1,3 +1,4 @@
-input#Field1 {
+input#Field1.field.text.fn {
     size: 14 !important;
+    value size: 14 !important;
 }
