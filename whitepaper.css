@@ -1,7 +1,7 @@
-span input#Field1.field.text.fn {
+#Field1 {
     width:160px;
 }
 
-span input#Field2.field.text.fn {
+#Field2 {
     width:160px;
 }
