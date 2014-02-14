@@ -1,3 +1,19 @@
+input#Field1 {
+    width: 177px;
+}
+
+input#Field2 {
+    width: 179px;
+}
+
+input#Field10 {
+    width: 362px;
+}
+
+input#Field4 {
+    width: 362px;
+}
+
 textarea#Field9 {
     resize: none;
 }
