@@ -1,3 +1,7 @@
-input {
+input#Field1 {
+    width: 160px;
+}
+
+input#Field2 {
     width: 160px;
 }
